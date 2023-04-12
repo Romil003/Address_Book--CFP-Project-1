@@ -116,3 +116,7 @@ let addressBook = new Array();
 addressBook.push(contact1);
 addressBook.push(contact2);
 console.log(addressBook);
+
+// to find contact by name 
+
+addressBook.filter(contact => contact.firstName=="Romil").forEach(contact => { contact.firstName="Bappa";console.log(contact.toString())});
