@@ -107,5 +107,12 @@ class Contact {
 
 let contact1 = new Contact("Romil","Ghadge","Lalbaug","Mumbai","Maharashtra",400012,1234567876,"romil11@gmail.com");
 console.log(contact1.toString());
-contact1.firstName="Gamer";
-console.log(contact1.toString());
+// contact1.firstName="Gamer";
+// console.log(contact1.toString());
+
+let contact2 = new Contact("Vaibhav","Gopale","Ghatkopar","Mumbai","Maharashtra",400043,1233214566,"vaibu.1@gmail.com");
+
+let addressBook = new Array();
+addressBook.push(contact1);
+addressBook.push(contact2);
+console.log(addressBook);
