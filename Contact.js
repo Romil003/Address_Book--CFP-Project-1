@@ -120,3 +120,11 @@ console.log(addressBook);
 // to find contact by name 
 
 addressBook.filter(contact => contact.firstName=="Romil").forEach(contact => { contact.firstName="Bappa";console.log(contact.toString())});
+
+// to find contact by name and delete it
+
+addressBook.filter(contact => contact.firstName=="Vaibhav").forEach(contact => {
+    let position = addressBook.indexOf(contact);
+    addressBook.splice(position,1);
+});
+console.log(addressBook);
